@@ -1,0 +1,112 @@
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.primary-place {
+  background-color: #edf2fc;
+  border: 1px solid #d9ecff;
+  color: #409eff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.success-place {
+  background-color: #f0f9eb;
+  border: 1px solid #e9f7e3;
+  color: #67C23A;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.warning-place {
+  background-color: #fdf6ec;
+  border: 1px solid #fbf1e3;
+  color: #e6a23c;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.error-place {
+  background-color: #fef0f0;
+  border: 1px solid #fde2e2;
+  color: #f66c6c;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+// 省略号
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
